@@ -1,0 +1,11 @@
+name: h2o-env
+channels:
+  - conda-forge
+  - nodefaults
+dependencies:
+  - r-dplyr
+  - r-h2o=3.44.0.3
+  - r-tibble
+  - r-readr
+  - r-argparse
+  
