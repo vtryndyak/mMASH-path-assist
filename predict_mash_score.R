@@ -54,8 +54,8 @@ if(! args$model %in% available_models){
     )
 }
 
-# The set of 79 predictor genes
-genes79 <- readRDS(file = "predictor_genes.rds")
+# The set of 74 predictor genes
+genes74 <- readRDS(file = "predictor_genes.rds")
 
 # Import raw counts of GE data
 message("Reading input data...")
@@ -75,15 +75,15 @@ data <- data %>%
 
 data[data < 0] <- 0
 
-# Scale per sample and only subset to 79 predictors
+# Scale per sample and only subset to 74 predictors
 data_scaled <- sweep(data,2,colSums(data),`/`)
-data_scaled <- t(data_scaled[genes79,-ncol(data_scaled)])
+data_scaled <- t(data_scaled[genes74,-ncol(data_scaled)])
 
 # Make predictions
 message("Making predictions...")
 
 model_path <- paste0(
-    "combined_genes79_",
+    "combined_genes74_",
     args$model
 )
 
@@ -103,7 +103,7 @@ predictions <- predict(
     mutate(
         sample_id = rownames(data_scaled),
         trained_on = "MF",
-        gene_set = "genes79",
+        gene_set = "genes74",
         Model = args$model
     )
 
