@@ -50,3 +50,6 @@ The output will contain the following columns:
 - trained_on: A string with `MF` value indicating model was originally developed on data from both males and females. Used for development purpose and can be ignored by end user.
 - gene_set: A panel of genes used for the model development. Used for development purpose and can be ignored by end user.
 - Model: a string indicating which model was used for the prediction.
+
+Reference:
+Tryndyak VP, Willett RA, Song Z, Dreval K, Hughes Hanks JM, Avigan MI, Wright FA, Beland FA, Rusyn I, Pogribny IP. [Signature gene expression model for quantitative evaluation of MASH-like liver injury in mice.](https://doi.org/10.1016/j.taap.2025.117442) Toxicol Appl Pharmacol. 2025 Jun 15;502:117442. doi: 10.1016/j.taap.2025.117442. PMID: 40527436.
