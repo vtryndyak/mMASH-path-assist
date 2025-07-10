@@ -1,6 +1,6 @@
 # Predicting MASH score using machine learning algorithm
 
-This script is intended to use pre-trained machine learning model to predict MASH score using gene expression data. To make the prediction, please follow these steps:
+This script is intended to use pre-trained machine learning model to predict metabolic dysfunction-associated steatohepatitis (MASH) score using gene expression data. To make the prediction, please follow these steps:
 
 1. Create conda environment.
 
